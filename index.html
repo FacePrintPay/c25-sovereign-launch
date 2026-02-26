@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>c25-sovereign-launch</title>
+<style>body{background:#0a0a1a;color:#e0e0ff;font-family:monospace;padding:20px;max-width:900px;margin:0 auto}h1{color:#7af}.badge{background:#1a3a1a;border:1px solid #4f4;padding:3px 10px;border-radius:20px;font-size:.8em;color:#4f4}pre{background:#111128;border:1px solid #333;border-radius:8px;padding:20px;overflow-x:auto;margin-top:20px}</style>
+</head><body><span class="badge">✅ CONFIRMED RAN</span><h1>c25-sovereign-launch</h1><p style="color:#888">Lines: 36 | Deps: git python  | C25 FacePrintPay</p><pre>#!/data/data/com.termux/files/usr/bin/bash
+echo "🧠 Sovereign Systems Initiating — Commander #MrGGTP"
+# === 1. NAVIGATE TO PROJECT DIR ===
+cd ~/aikre8tive || mkdir -p ~/aikre8tive && cd ~/aikre8tive
+# === 2. GIT INIT & PUSH ===
+echo "📦 Initializing Git Repository"
+git init
+git add .
+git commit -m "Sovereign launch - onebash"
+git remote add origin https://github.com/FacePrintPay/ai-metaverse-platform.git 2&gt;/dev/null
+git branch -M main
+git push -u origin main
+# === 3. LAUNCH AGENTS ===
+echo "🚀 Activating Planetary Agents..."
+for agent in Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune Pluto Luna Sun Ceres Haumea Makemake Eris Io Europa Ganymede Callisto Titan Enceladus Triton Charon Recon Chronos Matrix; do
+  echo "🔁 Launching Agent: $agent"
+  if [ -f "./agents/$agent.py" ]; then
+    nohup python3 ./agents/$agent.py &gt; ./logs/${agent}.log 2&gt;&1 &
+  else
+    echo "⚠️ Missing: ./agents/$agent.py"</pre></body></html>
