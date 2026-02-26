@@ -12,6 +12,6 @@ chmod +x sovereign_launch.sh
 ```
 
 ## Source
-/data/data/com.termux/files/home/constellation25-mono/aikre8tive/sovereign_launch.sh
+/data/data/com.termux/files/home/consolidation-audit/aikre8tive/sovereign_launch.sh
 
 Built by Constellation 25 — FacePrintPay / Cygel White
